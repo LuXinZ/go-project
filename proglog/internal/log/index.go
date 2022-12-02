@@ -1,6 +1,9 @@
 package log
 
-import "os"
+import (
+	"github.com/tysonmote/gommap"
+	"os"
+)
 
 var (
 	offWidth uint64 = 4
@@ -10,5 +13,6 @@ var (
 
 type index struct {
 	file *os.File
-	mmap
+	mmap gommap.MMap
+	size uint64
 }
