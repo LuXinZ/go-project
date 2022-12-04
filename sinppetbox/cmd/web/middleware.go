@@ -1,9 +1,9 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"github.com/justinas/nosurf"
-	"golang.org/x/net/context"
 	"net/http"
 )
 
